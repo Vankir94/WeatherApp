@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Minimus';
+  public title = 'Minimus';
+  public darkModeActive = false;
+  public showMenu = false;
+
+
+  public toggleMenu(): void{
+    this.showMenu = !this.showMenu;
+    console.log(this.showMenu);
+  }
+
+  public modeToggleSwitch(): void {
+    this.darkModeActive = !this.darkModeActive;
+  }
 }
+
