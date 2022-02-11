@@ -6,14 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public title = 'Minimus';
+  public title = 'Jupiter';
   public darkModeActive = false;
   public showMenu = false;
 
 
   public toggleMenu(): void{
     this.showMenu = !this.showMenu;
-    console.log(this.showMenu);
   }
 
   public modeToggleSwitch(): void {
